@@ -1,6 +1,9 @@
 # jest-webgl-canvas-mock-v2
 
 > Mock `canvas` and `WebGL` when running unit test cases with jest.
+ 
+[![npm](https://img.shields.io/npm/v/jest-canvas-mock-v2.svg)](https://www.npmjs.com/package/jest-canvas-mock-v2)
+[![npm](https://img.shields.io/npm/dm/jest-canvas-mock-v2.svg)](https://www.npmjs.com/package/jest-canvas-mock-v2)
 
 ## Disclaimer
 
