@@ -1,7 +1,7 @@
 {
-  "name": "jest-webgl-canvas-mock",
-  "version": "0.2.2",
-  "description": "Mock both 2D and WebGL contexts in Jest.",
+  "name": "jest-webgl-canvas-mock-v2",
+  "version": "1.0.3",
+  "description": "Mock both 2D and WebGL contexts in Jest v2.",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "publishConfig": {
@@ -48,7 +48,8 @@
       "src/mock/**/*.js"
     ],
     "setupFiles": [
-      "./src/index.js"
+      "./src/index.js",
+      "./__mocks__/worker.js"
     ]
   },
   "repository": {
