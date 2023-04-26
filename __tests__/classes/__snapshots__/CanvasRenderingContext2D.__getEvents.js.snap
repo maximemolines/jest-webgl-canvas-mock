@@ -1010,7 +1010,7 @@ exports[`__getEvents should have an event when fillStyle is set 1`] = `
 Array [
   Object {
     "props": Object {
-      "value": "#0000ff",
+      "value": "#00f",
     },
     "transform": Array [
       1,
@@ -1561,7 +1561,7 @@ exports[`__getEvents should have an event when setLineDash is called 1`] = `
 Array [
   Object {
     "props": Object {
-      "segments": Array [
+      "value": Array [
         1,
         2,
         3,
@@ -1874,7 +1874,7 @@ exports[`__getEvents should have an event when the shadowColor is valid 1`] = `
 Array [
   Object {
     "props": Object {
-      "value": "#ff0000",
+      "value": "#f00",
     },
     "transform": Array [
       1,
@@ -1931,7 +1931,7 @@ exports[`__getEvents should have an event when the strokeStyle is set 1`] = `
 Array [
   Object {
     "props": Object {
-      "value": "#0000ff",
+      "value": "#00f",
     },
     "transform": Array [
       1,

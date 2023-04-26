@@ -8,11 +8,7 @@ import mockWindow  from './window';
 // mock global window
 // TODO: Force coverage to ignore this branch
 if (typeof window !== 'undefined') {
-  mockWindow(global.window);
+  global.window = mockWindow(window);
 }
 
 export const ver = '__VERSION__';
-
-export function setupJestCanvasMock(window) {
-  mockWindow(window || global.window);
-}

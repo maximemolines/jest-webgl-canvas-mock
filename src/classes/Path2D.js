@@ -33,14 +33,8 @@ export default class Path2D {
   }
 
   addPath(path) {
-    if (arguments.length < 1)
-      throw new TypeError(
-          "Failed to execute 'addPath' on 'Path2D': 1 argument required, but only 0 present."
-      );
-    if (!(path instanceof Path2D))
-      throw new TypeError(
-          "Failed to execute 'addPath' on 'Path2D': parameter 1 is not of type 'Path2D'."
-      );
-    for (let i = 0; i < path._path.length; i++) this._path.push(path._path[i]);
+    if (arguments.length < 1) throw new TypeError('Failed to execute \'addPath\' on \'Path2D\': 1 argument required, but only 0 present.');
+    if (!(path instanceof Path2D)) throw new TypeError('Failed to execute \'addPath\' on \'Path2D\': parameter 1 is not of type \'Path2D\'.');
+    this._path = this._path.concat(path._path);
   }
 }

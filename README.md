@@ -1,9 +1,11 @@
-# jest-webgl-canvas-mock-v2
+# jest-webgl-canvas-mock
 
 > Mock `canvas` and `WebGL` when running unit test cases with jest.
- 
-[![npm](https://img.shields.io/npm/v/jest-canvas-mock-v2.svg)](https://www.npmjs.com/package/jest-canvas-mock-v2)
-[![npm](https://img.shields.io/npm/dm/jest-canvas-mock-v2.svg)](https://www.npmjs.com/package/jest-canvas-mock-v2)
+
+[![Build Status](https://travis-ci.org/adamfsk/jest-webgl-canvas-mock.svg?branch=master)](https://travis-ci.org/adamfsk/jest-webgl-canvas-mock)
+[![Coverage Status](https://coveralls.io/repos/github/adamfsk/jest-webgl-canvas-mock/badge.svg?branch=master)](https://coveralls.io/github/adamfsk/jest-webgl-canvas-mock)
+[![npm](https://img.shields.io/npm/v/jest-webgl-canvas-mock.svg)](https://www.npmjs.com/package/jest-webgl-canvas-mock)
+[![npm](https://img.shields.io/npm/dm/jest-webgl-canvas-mock.svg)](https://www.npmjs.com/package/jest-webgl-canvas-mock)
 
 ## Disclaimer
 
@@ -18,28 +20,28 @@ Please feel free to contribute and add any additional functionality required.
 This should only be installed as a development dependency (`devDependencies`) as it is only designed for testing.
 
 ```bash
-npm i --save-dev jest-webgl-canvas-mock-v2
+npm i --save-dev jest-webgl-canvas-mock
 ```
 
 
 ## Setup
 
-In your `package.json` under the `jest`, create a `setupFiles` array and add `jest-webgl-canvas-mock-v2` to the array.
+In your `package.json` under the `jest`, create a `setupFiles` array and add `jest-webgl-canvas-mock` to the array.
 
 ```json
 {
   "jest": {
-    "setupFiles": ["jest-webgl-canvas-mock-v2"]
+    "setupFiles": ["jest-webgl-canvas-mock"]
   }
 }
 ```
 
-If you already have a `setupFiles` attribute you can also append `jest-webgl-canvas-mock-v2` to the array.
+If you already have a `setupFiles` attribute you can also append `jest-webgl-canvas-mock` to the array.
 
 ```json
 {
   "jest": {
-    "setupFiles": ["./__setups__/other.js", "jest-webgl-canvas-mock-v2"]
+    "setupFiles": ["./__setups__/other.js", "jest-webgl-canvas-mock"]
   }
 }
 ```
@@ -55,9 +57,9 @@ add the `require` statement to an existing setup file.
 `__setups__/canvas.js`
 
 ```js
-import 'jest-webgl-canvas-mock-v2';
+import 'jest-webgl-canvas-mock';
 // or
-require('jest-webgl-canvas-mock-v2');
+require('jest-webgl-canvas-mock');
 ```
 
 Add that file to your `setupFiles` array:

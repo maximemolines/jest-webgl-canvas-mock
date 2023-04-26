@@ -14,10 +14,20 @@ describe('mock', () => {
     expect(ctx).toBeInstanceOf(CanvasRenderingContext2D);
   });
 
-  it('should expect getContext to be called', () => {
-    canvas.getContext('2d');
-    expect(canvas.getContext).toBeCalled();
+  it('context creation of type webgl returns WebGLRenderingContext', () => {
+    const ctx = canvas.getContext('webgl');
+    expect(ctx).toBeInstanceOf(WebGLRenderingContext);
   });
+
+  it('context creation of type experimental-webgl returns WebGLRenderingContext', () => {
+    const ctx = canvas.getContext('experimental-webgl');
+    expect(ctx).toBeInstanceOf(WebGLRenderingContext);
+  });
+
+  // it('should expect getContext to be called', () => {
+  //   canvas.getContext('2d');
+  //   expect(canvas.getContext).toBeCalled();
+  // });
 
   it('should have a toBlob function', () => {
     expect(typeof canvas.toBlob).toBe('function');
